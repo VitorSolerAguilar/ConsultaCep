@@ -14,6 +14,35 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
+    <ion-item>
+      <ion-label>Digite o cep: </ion-label>
+      <ion-input [(ngModel)] = "cep"></ion-input>
+    </ion-item>
+    <ion-button (click) = "BuscarCep()">Buscar</ion-button>
+
+    <ion-item>
+      <ion-label>Logradouro: </ion-label>
+      <ion-input [(ngModel)] = "logradouro"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Complemento: </ion-label>
+      <ion-input [(ngModel)] = "complemento"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bairro: </ion-label>
+      <ion-input [(ngModel)] = "bairro"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cidade: </ion-label>
+      <ion-input [(ngModel)] = "localidade  "></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Estado(UF): </ion-label>
+      <ion-input [(ngModel)] = "uf"></ion-input>
+    </ion-item>
   </div>
 </ion-content>
